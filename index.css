@@ -1,0 +1,908 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#rewards {
+  position: sticky;
+  bottom: 0;
+  z-index: 200;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  width: 100%;
+}
+.navbar-brand {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: goldenrod !important;
+  font-weight: bold;
+}
+#navbarSupportedContent a {
+  color: black;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.nav-item dropdown {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 100;
+  background-color: white;
+  color: black;
+}
+#navbarSupportedContent a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+#navbarSupportedContent button {
+  background-color: goldenrod;
+  width: 5rem;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+<!---home---- > #home {
+  background: url(./image1/f7.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Custom styling if needed */
+body {
+  margin: 20px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+/* Styling for form inside modal */
+.modal-content .contain {
+  padding: 20px;
+}
+
+.modal-content .text input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content .text button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content .text button:hover {
+  background-color: #0056b3;
+}
+
+.modal-content .text a {
+  color: #007bff;
+}
+
+.modal-content .text a:hover {
+  text-decoration: underline;
+}
+
+/********carosel*******/
+#carouselExampleIndicators {
+  margin-top: 20px;
+}
+.carosel.inner {
+  display: grid;
+}
+
+.carousel-inner img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/**** products*************/
+#product {
+  background: #e5e5e5;
+}
+#product .container h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#product h1:hover {
+  border-bottom: 2px solid goldenrod;
+}
+.card .card-img-top {
+  width: 300px;
+  height: 300px;
+}
+#product h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#product img {
+  width: 200px;
+  height: 200px;
+}
+#product h5 {
+  font-size: 20px;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 60px;
+}
+.card:hover {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px white;
+  transition: 0.2s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.btn-danger {
+  background-color: goldrod;
+  border: none;
+  color: white;
+}
+.star i {
+  color: goldenrod;
+  margin-top: 20px;
+}
+
+/**************contact**********/
+
+#contact img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+#contact .container {
+  max-width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin-top: 100px;
+}
+#contact .container h1 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+#contact h1:hover {
+  border-bottom: 2px solid goldenrod;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact input {
+  margin: 10px 0px;
+}
+#contact textarea {
+  margin: 10px 0px;
+}
+#contact btn:hover {
+  color: goldenrod;
+}
+
+/**********reviews*************/
+.review {
+  padding: 90px 10% 90px;
+  background: #e5e5e5;
+  margin-top: 100px;
+}
+/*.review .card1 {
+  border: 1px solid #29f700;
+}*/
+.review .card1 img {
+  width: 63vh;
+  height: 63vh;
+  border-radius: 20px;
+}
+.review h3 {
+  font-size: 26px;
+  color: goldenrod;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.review h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+}
+.review h5 {
+  margin-top: 35px;
+  display: inline-block;
+}
+.review h5 a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: black;
+}
+.review h5 img {
+  border-radius: 5px;
+}
+.review .rating i {
+  color: goldenrod;
+  margin-top: 20px;
+}
+@media screen and (max-width: 636px) {
+  .review h3 {
+    margin-top: 10px;
+  }
+}
+
+/*******footer*****/
+.footer {
+  background-color: #e5e5e5;
+  color: black;
+  width: 100%;
+}
+.footer .container h5 {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .container .col p {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 15px;
+}
+.container .col p .text-dark {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.footer .container h5:hover {
+  border-bottom: 2px solid goldenrod;
+}
+
+/*********************** navigation main.html*********************/
+.hero-header {
+  background: linear-gradient(
+    rgba(15, 23, 43, 0.9),
+    rgba(15, 23, 43, 0.9),
+    url(./image/terracotta/main.png)
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-header img {
+  animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* New animations for text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.heading-animation {
+  animation: fadeIn 2s ease-in-out, slideUp 2s ease-in-out;
+}
+
+.paragraph-animation {
+  animation: fadeIn 2.5s ease-in-out, slideUp 2.5s ease-in-out;
+}
+
+.button-animation {
+  animation: fadeIn 3s ease-in-out, slideUp 3s ease-in-out;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+.navbar-brand {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: goldenrod !important;
+  font-weight: bold;
+}
+#navbarSupportedContent a {
+  color: black;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.nav-item dropdown {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 100;
+  background-color: white;
+  color: black;
+}
+#navbarSupportedContent a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+#navbarSupportedContent button {
+  background-color: goldenrod;
+  width: 5rem;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(./image/silk/Orange_and_Pink_Silk_Balls_with_Floral_String_Silk_Thread_Jewellery_Set-STJS-039.png);
+  background-size: cover;
+  background-position: center;
+}
+#home h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 1px 0px #ccc, 0px 2px 0px #ccc, 0px 3px 0px #ccc,
+    0px 4px 0px #ccc, 0px 5px 0px #ccc;
+}
+
+/**** products*************/
+#product {
+  background: #e5e5e5;
+}
+#product .container h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#product h1:hover {
+  border-bottom: 2px solid goldrod;
+}
+.card .card-img-top {
+  width: 300px;
+  height: 300px;
+}
+#product h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#product img {
+  width: 200px;
+  height: 150px;
+}
+#product h5 {
+  font-size: 10px;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 60px;
+}
+.card:hover {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px white;
+  transition: 0.2s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.btn-danger {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+}
+.star i {
+  color: goldenrod;
+  margin-top: 2px;
+}
+
+/***********navigation silk.html*************/
+
+/** {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+.navbar-brand {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: goldrod !important;
+  font-weight: bold;
+}
+#navbarSupportedContent a {
+  color: black;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.nav-item dropdown {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 100;
+  background-color: white;
+  color: black;
+}
+#navbarSupportedContent a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+#navbarSupportedContent button {
+  background-color: goldrod;
+  width: 5rem;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}*/
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(./image/silk/Orange_and_Pink_Silk_Balls_with_Floral_String_Silk_Thread_Jewellery_Set-STJS-039.png);
+  background-size: cover;
+  background-position: center;
+}
+#home h1 {
+  font-size: 70px;
+  text-transform: capitalize;
+  color: white;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0px 1px 0px #ccc, 0px 2px 0px #ccc, 0px 3px 0px #ccc,
+    0px 4px 0px #ccc, 0px 5px 0px #ccc;
+}
+/*Add this CSS to animate */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to h1 */
+#home h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Apply animation to the paragraph and h1 under the product section */
+.product p,
+.product h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Delay for p and h1 under the product section */
+.product p {
+  animation-delay: 1s;
+}
+
+.product h1 {
+  animation-delay: 1.5s;
+}
+
+.line {
+  animation: fadeIn 3s ease-in-out;
+}
+
+/**** products*************/
+#product {
+  background: #e5e5e5;
+}
+#product .container h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#product h1:hover {
+  border-bottom: 2px solid goldenrod;
+}
+.card .card-img-top {
+  width: 300px;
+  height: 300px;
+}
+#product h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#product img {
+  width: 200px;
+  height: 200px;
+}
+#product h5 {
+  font-size: 20px;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 60px;
+}
+.card:hover {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px white;
+  transition: 0.2s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.btn-danger {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+}
+.star i {
+  color: goldrod;
+  margin-top: 20px;
+}
+/************product.html*************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+.navbar-brand {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: goldenrod !important;
+  font-weight: bold;
+}
+#navbarSupportedContent a {
+  color: black;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.nav-item dropdown {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  z-index: 100;
+  background-color: white;
+  color: black;
+}
+#navbarSupportedContent a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+#navbarSupportedContent button {
+  background-color: goldrod;
+  width: 5rem;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#home {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+          url(./image/silk/Orange_and_Pink_Silk_Balls_with_Floral_String_Silk_Thread_Jewellery_Set-STJS-039.png);
+        background-size: cover;
+        background-position: center;
+      }
+      #home h1 {
+        font-size: 70px;
+        text-transform: capitalize;
+        color: white;
+        letter-spacing: 3px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0px 1px 0px #ccc, 0px 2px 0px #ccc, 0px 3px 0px #ccc,
+          0px 4px 0px #ccc, 0px 5px 0px #ccc;
+      }*/
+
+.hero-header {
+  background: linear-gradient(
+    rgba(15, 23, 43, 0.9),
+    rgba(15, 23, 43, 0.9),
+    url(./image/terracotta/main.png)
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-header img {
+  height: 400px;
+  width: 400px;
+}
+.hero-header img {
+  animation: imgRotate 50s linear infinite;
+}
+@keyframes imgRotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* New animations for text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.heading-animation {
+  animation: fadeIn 2s ease-in-out, slideUp 2s ease-in-out;
+}
+
+.paragraph-animation {
+  animation: fadeIn 2.5s ease-in-out, slideUp 2.5s ease-in-out;
+}
+
+.button-animation {
+  animation: fadeIn 3s ease-in-out, slideUp 3s ease-in-out;
+}
+
+/**** products*************/
+#product {
+  background: #e5e5e5;
+}
+#product .container h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#product h1:hover {
+  border-bottom: 2px solid goldrod;
+}
+.card .card-img-top {
+  width: 300px;
+  height: 300px;
+}
+#product h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#product img {
+  width: 200px;
+  height: 200px;
+}
+#product h5 {
+  font-size: 20px;
+}
+.card {
+  width: 250px;
+  height: 300px;
+  background: #e5e5e5 !important;
+  border: none !important;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 60px;
+}
+.card:hover {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 10px white;
+  transition: 0.2s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.btn-danger {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+}
+.star i {
+  color: goldenrod;
+  margin-top: 20px;
+}
